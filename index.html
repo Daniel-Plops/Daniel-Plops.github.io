@@ -15,15 +15,30 @@
     }
 
     header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       border-bottom: 1px solid #333;
       margin-bottom: 2rem;
+      position: relative;
     }
 
     h1 {
       color: #b278ff;
       font-size: 2rem;
     }
-
+    nav {
+      display: flex;
+      gap: 0.5rem;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    header:hover nav {
+      opacity: 1;
+    }
     nav a {
       color: #c7aefc;
       text-decoration: none;
